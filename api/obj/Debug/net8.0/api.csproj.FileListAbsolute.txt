@@ -274,3 +274,7 @@ C:\Users\Danila\Documents\GitHub\Backend\StockProject\api\obj\Debug\net8.0\refin
 C:\Users\Danila\Documents\GitHub\Backend\StockProject\api\obj\Debug\net8.0\api.pdb
 C:\Users\Danila\Documents\GitHub\Backend\StockProject\api\obj\Debug\net8.0\api.genruntimeconfig.cache
 C:\Users\Danila\Documents\GitHub\Backend\StockProject\api\obj\Debug\net8.0\ref\api.dll
+C:\Users\Danila\Documents\GitHub\Backend\StockProject\api\bin\Debug\net8.0\Microsoft.AspNetCore.JsonPatch.dll
+C:\Users\Danila\Documents\GitHub\Backend\StockProject\api\bin\Debug\net8.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+C:\Users\Danila\Documents\GitHub\Backend\StockProject\api\bin\Debug\net8.0\Newtonsoft.Json.dll
+C:\Users\Danila\Documents\GitHub\Backend\StockProject\api\bin\Debug\net8.0\Newtonsoft.Json.Bson.dll
