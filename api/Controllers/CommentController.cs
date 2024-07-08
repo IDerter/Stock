@@ -71,8 +71,7 @@ namespace api.Controllers
             return CreatedAtAction(nameof(GetById), new {id = commentModel.Id}, commentModel.ToCommentDto());
         }
 
-        [HttpPut]
-        [Route("{id:int}")]
+        [HttpPut("{id:int}")]
         public async Task<IActionResult> Update([FromRoute] int id, [FromBody] UpdateCommentRequestDto commentRequestDto)
         {
             if (!ModelState.IsValid)
@@ -90,7 +89,7 @@ namespace api.Controllers
             return Ok(comment.ToCommentDto());
         }
 
-        [HttpDelete]
+        [HttpDelete] // or [HttpDelete("{id:int}")] 
         [Route("{id:int}")]
         public async Task<IActionResult> Delete([FromRoute] int id)
         {
