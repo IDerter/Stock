@@ -12,9 +12,9 @@ const Tile = ({title, subTitle}: Props) => {
             <div className="flex-auto p-4">
                 <div className="flex flex-wrap">
                     <div className="relative w-full pr-4 max-w-full flex-grow flex-1">
-                        <h5 className="text-blueGray-400 uppercase font-bold text-xs">
+                        <h4 className="text-blueGray-400 uppercase font-bold text-xs">
                             {title}
-                        </h5>
+                        </h4>
                         <span className="font-bold text-xl">{subTitle}</span>
                     </div>
                 </div>
