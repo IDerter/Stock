@@ -28,6 +28,7 @@ export const UserProvider = ( {children} : Props ) => {
     const [isReady, setIsReady] = useState(false);
 
     useEffect (() => {
+        console.log("useEffect useAuth");
         const user = localStorage.getItem("user");
         const token = localStorage.getItem("token");
         if (user && token) {
@@ -39,6 +40,7 @@ export const UserProvider = ( {children} : Props ) => {
     }, [])
 
     const registerUser = async (email: string, userName: string, password: string) => {
+        console.log("registerUser");
         await registerAPI(email, userName, password).then((res) => {
             if (res) {
                 localStorage.setItem("token", res?.data.token);
@@ -57,6 +59,7 @@ export const UserProvider = ( {children} : Props ) => {
     
 
     const loginUser = async (userName: string, password: string) => {
+        console.log("loginUser");
         await loginAPI(userName, password).then((res) => {
             if (res) {
                 localStorage.setItem("token", res?.data.token);
@@ -74,6 +77,7 @@ export const UserProvider = ( {children} : Props ) => {
     }
 
     const isLoggedIn = () =>{
+        console.log("isLoggedIn", !!user);
         return !!user;
     };
 

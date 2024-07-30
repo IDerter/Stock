@@ -2,7 +2,7 @@ import axios from "axios"
 import { handleError } from "../Helpers/ErrorHandler";
 import { UserProfileToken } from "../Models/User";
 
-const api = "http://localhost:5159/api"
+const api = "http://localhost:5159/api/"
 
 export const loginAPI = async (userName: string, password: string) => {
     try {
