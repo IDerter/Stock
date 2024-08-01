@@ -1,6 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\api",
+    "\\frontend",
+    "\\frontend\\src"
   ],
   "PreviewInSolutionExplorer": false
 }
